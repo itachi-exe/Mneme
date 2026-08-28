@@ -1,0 +1,25 @@
+{
+  "name": "mneme",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Mneme — Collective Agent Memory Layer on 0G",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev -w @mneme/api\" \"npm run dev -w @mneme/web\"",
+    "build": "npm run build -w @mneme/protocol && npm run build -w @mneme/sdk && npm run build -w @mneme/api && npm run build -w @mneme/web",
+    "test": "npm run test -w @mneme/protocol && npm run test -w @mneme/sdk && npm run test -w @mneme/api && cd contracts && forge test",
+    "seed": "npm run seed -w @mneme/api",
+    "demo": "npm run demo -w @mneme/api",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

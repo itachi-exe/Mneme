@@ -1,0 +1,27 @@
+:root {
+  --bg: #08090a;
+  --bg-1: #0e0f11;
+  --bg-2: #141518;
+  --bg-3: #1b1c20;
+  --bg-4: #222328;
+  --line: rgba(255, 255, 255, 0.075);
+  --line-2: rgba(255, 255, 255, 0.12);
+  --text: #f2f3f4;
+  --muted: #8b9099;
+  --faint: #5e636c;
+  --iris: #7170ff;
+  --iris-2: #8d8cff;
+  --iris-dim: rgba(113, 112, 255, 0.14);
+  --gold: #d4b06a;
+  --gold-dim: rgba(212, 176, 106, 0.14);
+  --green: #4cb782;
+  --green-dim: rgba(76, 183, 130, 0.14);
+  --red: #eb5757;
+  --amber: #f2c14e;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --r: 8px;
+  --r-sm: 6px;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+  --header: 56px;
+}

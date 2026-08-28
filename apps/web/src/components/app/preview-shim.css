@@ -1,0 +1,65 @@
+.pv {
+  display: grid;
+  grid-template-columns: 200px 1fr 260px;
+  min-height: 440px;
+  background: #0a0b0d;
+  text-align: left;
+  font-size: 12.5px;
+}
+.pv-side { border-right: 1px solid var(--line); padding: 12px 10px; color: var(--muted); }
+.pv-brand { font-weight: 600; color: var(--text); padding: 4px 6px 12px; letter-spacing: -0.03em; }
+.pv-search {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: var(--faint);
+  margin-bottom: 14px;
+}
+.pv-lab { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); padding: 0 6px 6px; }
+.pv-item { display: flex; align-items: center; gap: 8px; padding: 6px 6px; border-radius: 6px; }
+.pv-item.on { background: var(--bg-3); color: var(--text); }
+.pv-item i { width: 6px; height: 6px; border-radius: 2px; background: var(--iris); display: block; }
+.pv-item em { margin-left: auto; font-style: normal; color: var(--faint); font-family: var(--mono); font-size: 11px; }
+.pv-bar {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.pv-bar span { color: var(--faint); }
+.pv-row {
+  display: grid;
+  grid-template-columns: 64px 1fr 72px 70px 36px;
+  gap: 8px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--line);
+  color: #d0d2d6;
+  align-items: center;
+}
+.pv-row.sel { background: var(--iris-dim); }
+.pv-row .mono { color: var(--faint); font-size: 11px; }
+.pv-who, .pv-when { color: var(--faint); font-size: 11px; }
+.pv-tag { color: var(--iris-2); font-size: 11px; }
+.pv-detail { border-left: 1px solid var(--line); padding: 16px 16px 20px; }
+.pv-detail h4 { margin: 8px 0 10px; font-size: 14px; letter-spacing: -0.02em; }
+.pv-detail p { color: var(--muted); line-height: 1.55; margin: 0 0 16px; }
+.pv-detail ul { list-style: none; margin: 0; padding: 0; }
+.pv-detail li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+.pv-detail li span { color: var(--faint); font-family: var(--sans); }
+
+@media (max-width: 860px) {
+  .pv { grid-template-columns: 1fr; }
+  .pv-side, .pv-detail { display: none; }
+}
